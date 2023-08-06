@@ -1,0 +1,32 @@
+
+    <a href="#" class="home-icon">
+        <i class="material-icons">home</i>
+      </a>
+
+
+<div class="profile-card">
+    <mat-card class="user">
+        <mat-card-header>
+            <mat-card-title>
+                {{user?.name}}
+                <p class="username">
+                    <i class="material-icons">account_circle</i> {{user?.username}}
+                </p>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p><i class="material-icons">email</i> {{user?.email}}</p>
+            <p><i class="material-icons">phone</i> {{user?.phone}}</p>
+            <p><i class="material-icons">language</i> {{user?.website}}</p>
+                    </mat-card-content>
+    </mat-card>
+    <mat-card class="address">
+        <mat-card-title>
+            Address 
+        </mat-card-title>
+        <app-address [address]="user?.address"></app-address>
+    </mat-card>
+    <mat-card class="company">
+        <app-company [company]="user?.company" />
+    </mat-card>
+</div>

@@ -1,0 +1,88 @@
+.home-icon {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    color: black;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-icon:hover {
+    background-color: #0056b3;
+  }
+
+.profile-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    top:20%;
+    position: relative;
+}
+
+
+.user{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    padding:2rem;
+    height: 400px;
+}
+
+.username{
+    background-color: grey;
+    padding: 0.5rem;
+    border-radius:1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem
+}
+
+.address{
+    background-color: hsla(184, 100%, 22%,0.5);
+    color: white;
+    padding:2rem;
+    height: 400px;
+}
+
+.company{
+    background-color: hsla(179, 100%, 13%,0.5);
+    color: white;
+    height: 400px;
+}
+
+.user,
+.company,
+.address{
+    width:100%;
+    max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+        .profile-card {
+          justify-content: center;
+        }
+
+        .user,
+  .address,
+  .company {
+    width: calc(33.33% - 1rem);
+  }
+
+}
+
+
+@media screen and (min-width: 992px) {
+  .user,
+  .address,
+  .company {
+    max-width: 250px;
+  }
+}

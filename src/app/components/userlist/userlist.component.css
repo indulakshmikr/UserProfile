@@ -1,0 +1,25 @@
+.userCards{
+    
+    margin: 2rem;
+}
+
+.mat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1rem;
+    }
+
+mat-icon{
+    fill:white
+}
+
+.matCard{
+    width:300px;
+    border-radius: 1rem;
+}
+
+.matHeader{
+   background-image: linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
