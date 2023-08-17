@@ -3,7 +3,7 @@ name: User Profile
 on:
   push:
     branches:
-    - main
+    - first-commit
 
 jobs:
   deploy:
